@@ -1,6 +1,6 @@
 # Disentangled Instance Mesh Reconstruction (ECCV 2022)
 
-Origin repository :[text](https://github.com/ashawkey/dimr)
+Origin repository :[Link](https://github.com/ashawkey/dimr)
 
 ## 🆕 Updated Environment Version
 
