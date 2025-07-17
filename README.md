@@ -24,6 +24,8 @@ conda create -n dimr python==3.9
 cd dimr
 
 pip install -r requirements.txt
+pip install torch==2.1.0+cu121 torchvision==0.16.0+cu121 torchaudio==2.1.0 --index-url https://download.pytorch.org/whl/cu121
+
 ```
 
 Install dependent libraries:

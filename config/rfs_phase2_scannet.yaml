@@ -46,7 +46,7 @@ TRAIN:
   score_fullscale: 20 # 14
   score_mode: 4 # mean
 
-  pretrain_path: ./exp/scannetv2/rfs/rfs_phase1_scannet/rfs_phase1_scannet-000000256.pth
+  pretrain_path: ./exp/pointgroup_phase2_scannet-000000256.pth
   pretrain_module: ['input_conv', 'unet', 'output_layer', 'linear', 'offset', 'offset_linear', 'angle', 'angle_linear']
   fix_module: [] # ['input_conv', 'unet', 'output_layer', 'linear', 'offset', 'offset_linear', 'angle', 'angle_linear']
 
