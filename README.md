@@ -10,12 +10,6 @@ This is an updated version of DIMR that has been adapted for modern environments
 - **spconv 2.x** integration
 - Updated dependencies for better stability
 
-### [Project Page](https://ashawkey.github.io/dimr/) | [Arxiv](https://arxiv.org/abs/2203.16832) | [Data](https://drive.google.com/drive/folders/1pzJ-PIe9pGjf0yNwfAU5zjQ4YMKJYbno?usp=sharing)
-
-
-![dimr](./assets/dimr.png)
-
-
 ### Installation
 
 #### Environment Requirements
