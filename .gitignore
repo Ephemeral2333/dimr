@@ -16,3 +16,4 @@ dist/
 datasets_old/
 datasets/*
 !datasets/splits
+datasets
