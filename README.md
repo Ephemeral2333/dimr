@@ -2,6 +2,14 @@
 
 This repository contains the official implementation for the paper: [Point Scene Understanding via Disentangled Instance Mesh Reconstruction](https://arxiv.org/abs/2203.16832).
 
+## 🆕 Updated Environment Version
+
+This is an updated version of DIMR that has been adapted for modern environments:
+- **CUDA 12.2** compatibility
+- **PyTorch 2.x** support
+- **spconv 2.x** integration
+- Updated dependencies for better stability
+
 ### [Project Page](https://ashawkey.github.io/dimr/) | [Arxiv](https://arxiv.org/abs/2203.16832) | [Data](https://drive.google.com/drive/folders/1pzJ-PIe9pGjf0yNwfAU5zjQ4YMKJYbno?usp=sharing)
 
 
@@ -10,9 +18,15 @@ This repository contains the official implementation for the paper: [Point Scene
 
 ### Installation
 
+#### Environment Requirements
+
+- CUDA 12.2
+- PyTorch 2.x
+- Python 3.9+
+
 Clone the repository:
 ```bash
-git clone --recursive  https://github.com/ashawkey/dimr
+conda create -n dimr python==3.9
 cd dimr
 
 pip install -r requirements.txt
@@ -20,15 +34,9 @@ pip install -r requirements.txt
 
 Install dependent libraries:
 
-The repository depends on a modified `spconv` from [pointgroup](https://github.com/dvlab-research/PointGroup) for sparse convolution, which requires CUDA version < 11 and pytorch < 1.5.
-
-* spconv
+* spconv (CUDA 12.0 compatible)
   ```bash
-  cd lib/spconv
-  python setup.by bdist_wheel
-  cd dist
-  # may need to change the filename
-  pip install spconv-1.0-cp37-cp37m-linux_x86_64.whl
+  pip install spconv-cu120
   ```
 
 * pointgroup_ops
@@ -191,6 +199,14 @@ If you find our work useful, please use the following BibTeX entry:
   year={2022}
 }
 ```
+
+### Updates
+
+**Environment Modernization:**
+- Updated to support CUDA 12.2 and modern PyTorch versions
+- Replaced custom spconv with official spconv-cu120 package
+- Fixed compatibility issues with spconv 2.x API changes
+- Improved stability and performance on newer hardware
 
 ### Acknowledgement
 
