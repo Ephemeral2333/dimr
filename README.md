@@ -1,6 +1,6 @@
 # Disentangled Instance Mesh Reconstruction (ECCV 2022)
 
-This repository contains the official implementation for the paper: [Point Scene Understanding via Disentangled Instance Mesh Reconstruction](https://arxiv.org/abs/2203.16832).
+Origin repository :[text](https://github.com/ashawkey/dimr)
 
 ## 🆕 Updated Environment Version
 
