@@ -46,7 +46,7 @@ TRAIN:
   score_fullscale: 20 # 14
   score_mode: 4 # mean
 
-  pretrain_path: ./exp/pointgroup_phase2_scannet-000000256.pth
+  pretrain_path: ./exp/scannetv2/rfs/rfs_phase2_scannet/rfs_phase2_scannet-000000256.pth
   pretrain_module: ['input_conv', 'unet', 'output_layer', 'linear', 'offset', 'offset_linear', 'angle', 'angle_linear']
   fix_module: [] # ['input_conv', 'unet', 'output_layer', 'linear', 'offset', 'offset_linear', 'angle', 'angle_linear']
 
@@ -74,10 +74,10 @@ TEST:
   eval: True
   eval_voxel_size: 0.047
   mesh_iou_thresh: [0.25, 0.5]
-  save_semantic: False #True
+  save_semantic: True #True
   save_pt_offsets: False
-  save_pt_angles: False #True
-  save_instance: False #True 
+  save_pt_angles: True #True
+  save_instance: True #True 
   save_mesh: True
 
   retrieval: False

@@ -5,7 +5,11 @@ import torch
 import trimesh
 from functools import partial
 from multiprocessing import Pool
-from trimesh.exchange.binvox import voxelize_mesh
+# Use our fixed binvox implementation
+import sys
+import os
+sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(__file__))))
+from fix_binvox import voxelize_mesh_fixed as voxelize_mesh
 
 RFS_labels = ['wall', 'floor', 'cabinet', 'bed', 'chair', 'sofa', 'table', 'door', 'window', 'bookshelf', 'picture', 'counter', 'desk', 'curtain', 'refridgerator', 'shower curtain', 'toilet', 'sink', 'bathtub', 'otherfurniture', 'kitchen_cabinet', 'display', 'trash_bin', 'other_shelf', 'other_table']
 CAD_labels = ['table', 'chair', 'bookshelf', 'sofa', 'trash_bin', 'cabinet', 'display', 'bathtub']
